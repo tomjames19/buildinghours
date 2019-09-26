@@ -1,0 +1,25 @@
+type Building @model {
+	id: ID!
+	name: String!
+	schedules: [Schedule] @connection(name: "buildingSchedule")
+}
+
+type Schedule @model {
+	id: ID!
+	schedule_name: String!
+	start_date: String!
+	end_date: String!
+    default_schedule: Boolean!
+	days: [Day] @connection(name: "scheduleday")
+	building: Building @connection(name: "buildingSchedule")
+}
+
+type Day @model {
+	id: ID!
+	day_name: String!
+	opening_time: String!
+	closing_time: String!
+    closed: Boolean!
+	schedule: Schedule @connection(name: "scheduleday")
+	order: Int!
+}

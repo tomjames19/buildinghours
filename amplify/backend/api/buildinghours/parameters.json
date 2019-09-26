@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "buildinghours",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authbuildinghours0b2f3fc1",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
