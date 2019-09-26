@@ -1,4 +1,4 @@
-// eslint-disable
+/* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
 export const createBuilding = `mutation CreateBuilding($input: CreateBuildingInput!) {
@@ -80,7 +80,6 @@ export const createSchedule = `mutation CreateSchedule($input: CreateScheduleInp
   }
 }
 `;
-
 export const updateSchedule = `mutation UpdateSchedule($input: UpdateScheduleInput!) {
   updateSchedule(input: $input) {
     id

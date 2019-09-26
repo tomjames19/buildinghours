@@ -55,7 +55,13 @@ class Home extends Component {
             })
         });
 
-
+        /*
+            Forcing a reload of the page will immediately update the UI
+            on the creation of the building.  This is an inccorect practice
+            and should not be used.
+            Todo: add state management to application.
+        */
+        window.location.reload();
         this.handleClose();
     }
 
