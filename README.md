@@ -63,11 +63,11 @@ After setting up the backend you can develop and test locally using
 ```bash
 npm start
 ```
-This application was created using [Create-React-App] (https://github.com/facebook/create-react-app) you can view their documentation for more details.
+This application was created using [Create-React-App](https://github.com/facebook/create-react-app) you can view their documentation for more details.
 
 # About the Building Hours Project
 ## Background 
-This application is a proof of concept tool for creating, updating and deleting building hours to be used in conjunction with Amazon's [QnABot] (https://github.com/aws-samples/aws-ai-qna-bot) project.  Using this UI you can create update and delete buildings or offices within your organization.  This information is saved to a Dynamo Database that Amplify creates within your AWS account.  Upon creation of this Dynamo Db you can use the premade 'Building Hours' extension in the QnA Bot content designer to plug your QnA bot into this building tool and open up your building hours for use on Alexa and Web based chat bots.  
+This application is a proof of concept tool for creating, updating and deleting building hours to be used in conjunction with Amazon's [QnABot](https://github.com/aws-samples/aws-ai-qna-bot) project.  Using this UI you can create update and delete buildings or offices within your organization.  This information is saved to a Dynamo Database that Amplify creates within your AWS account.  Upon creation of this Dynamo Db you can use the premade 'Building Hours' extension in the QnA Bot content designer to plug your QnA bot into this building tool and open up your building hours for use on Alexa and Web based chat bots.  
 
 ## Application Structure
 The buildinghours application is structured based off of the create-react-app layout.  Under the source folder the application is App.js this is the home file for the application.  Inside is where we configure Amplify by configuring the awsmobile file.  The app is exported using 'withAuthenticator' to take advantage of the authentication libraries amplify and cognito provide.  After this the source is broken into 4 groups.
@@ -113,6 +113,3 @@ This will update your tables and api and will give you the option to have amplif
 4. Multiple Opening and closing times per day.  We would like to support the ability to have a building open and close twice within one day.
 5. Staging and production Databases. - One data base to stage changes that will then be submitted for apporval before commited to production, thus assuring the data presented to the public is the most accurate.
 6. Cognito plug into other identity providers such as Microsoft AD or OpenID.  Possibly look into replacing cognito with Okta and using API key for graphql queries.
-
-
-
